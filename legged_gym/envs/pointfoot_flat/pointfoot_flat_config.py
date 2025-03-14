@@ -167,7 +167,7 @@ class BipedCfg(BaseConfig):
 
     class asset:
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/PF_TRON1A/urdf/robot.urdf"
-        name = "biped"
+        name = "pointfoot_flat"
         foot_name = "foot"
         foot_radius = 0.03
         penalize_contacts_on = ["knee", "hip"]
@@ -391,7 +391,7 @@ class BipedCfgPPO(BaseConfig):
         exptid = ""
         wandb_project = "legged_gym_PF"
         save_interval = 500  # check for potential saves every this many iterations
-        experiment_name = "biped"
+        experiment_name = "pointfoot_flat"
         run_name = ""
         # load and resume
         resume = False

@@ -33,9 +33,9 @@ from legged_gym import (
     LEGGED_GYM_ENVS_DIR,
 )
 
-from legged_gym.envs.biped.biped import Biped
+from legged_gym.envs.pointfoot_flat.pointfoot_flat import Biped
 
-from legged_gym.envs.biped.biped_config import (
+from legged_gym.envs.pointfoot_flat.pointfoot_flat_config import (
     BipedCfg,
     BipedCfgPPO,
 )
@@ -45,4 +45,4 @@ import os
 
 from legged_gym.utils.task_registry import task_registry
 
-task_registry.register("biped", Biped, BipedCfg(), BipedCfgPPO())
+task_registry.register("pointfoot_flat", Biped, BipedCfg(), BipedCfgPPO())

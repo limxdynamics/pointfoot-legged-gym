@@ -76,8 +76,8 @@ def play(args):
     obs, obs_history, commands = env.get_observations()
     # load policy
     train_cfg.runner.resume = True
-    train_cfg.runner.load_run = "0314_test"
-    train_cfg.runner.checkpoint = 4000
+    train_cfg.runner.load_run = args.load_run
+    train_cfg.runner.checkpoint = args.checkpoint
     # train_cfg.runner.checkpoint = -1
 
     ppo_runner, train_cfg = task_registry.make_alg_runner(

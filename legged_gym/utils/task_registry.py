@@ -124,7 +124,7 @@ class TaskRegistry:
                     + "{}_config.py".format(name),
                 ),
             ]
-        elif "biped" in name:
+        elif "pointfoot_flat" in name:
             save_items = [
                 os.path.join(
                     self.log_dir,
@@ -132,7 +132,7 @@ class TaskRegistry:
                 ),
                 os.path.join(
                     self.log_dir,
-                    LEGGED_GYM_ENVS_DIR + "/biped/biped.py",
+                    LEGGED_GYM_ENVS_DIR + "/pointfoot_flat/pointfoot_flat.py",
                 ),
                 os.path.join(
                     self.log_dir,
